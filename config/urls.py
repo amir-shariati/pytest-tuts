@@ -21,4 +21,5 @@ from companies.urls import company_router
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", include(company_router.urls)),
 ]
